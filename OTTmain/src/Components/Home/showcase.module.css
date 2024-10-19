@@ -1,0 +1,82 @@
+@import '~owl.carousel/dist/assets/owl.carousel.css';
+@import '~owl.carousel/dist/assets/owl.theme.default.css';
+
+.container {
+  background-color: #000; /* Black background for OTT feel */
+  padding: 20px;
+}
+
+.gallerycontainer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+
+.gallerywrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gallerygrid {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+}
+
+.galleryitem {
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.galleryitem:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  z-index: 10;
+}
+
+.posterImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.galleryvideo {
+  display: none; /* Hide video in gallery, only show poster */
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.modalcontent {
+  max-width: 90%;
+  max-height: 90%;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}

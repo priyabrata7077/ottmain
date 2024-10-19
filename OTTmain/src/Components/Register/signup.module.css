@@ -1,0 +1,115 @@
+.container{
+    height: 100vh;
+    width: 100%;display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e0446;
+    color: white;
+    
+}
+.signupContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 50vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .formSection {
+    width: 50%;
+    padding: 40px;
+    background-color: #8137ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 5px 5px white;
+
+  }
+  
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .inputField {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .toggleBtn {
+    padding: 10px;
+    background-color: #350588;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggleBtn:hover {
+    background-color: #530dcb;
+  }
+  
+  .otpBtn,
+  .loginBtn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #350588;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .otpBtn:hover,
+  .loginBtn:hover {
+    background-color:#530dcb;
+  }
+  
+  .welcomeSection {
+    width: 50%;
+    background: linear-gradient(45deg, #431073,#8137ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    border-radius: 00px 20px 20px 0px;
+    box-shadow: 0px 5px 5px white;
+  }
+  
+  .welcomeSection h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcomeSection p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .otpInputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .otpField {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .otpField:not(:last-child) {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.adbanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  height: 100px;
+  max-width: 800px; 
+}
+
+.adcontent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.adlogo {
+  width: 25%;
+  height: auto;
+  max-height: 100%;
+  margin-right: 20px;
+}
+
+.adtext {
+  flex-grow: 1;
+}
+
+.adtitle {
+  font-size: 0.9rem;
+  color: gold;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.adbtn {
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.adbtn:hover {
+  background-color: #e67e22;
+}
+
+.adclosebtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.adclosebtn:hover {
+  color: red;
+}
+
+/* Styling for the option menu */
+.optionMenu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  color: black;
+}
+
+.optionMenu p {
+  margin: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.optionMenu p:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .adbanner {
+    width: 80%;
+    max-width: 600px; /* Reduced max-width for medium screens */
+  }
+
+  .adlogo {
+    max-width: 80px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .adbtn {
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adbanner {
+    width: 90%;
+    max-width: 400px; /* Further reduced for smaller screens */
+  }
+
+  .adlogo {
+    max-width: 60px;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+  }
+
+  .adbtn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}
